@@ -6,7 +6,48 @@ body {
     background-color: #f0f0f0;
     color: #333;
   }
+  .navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
   
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }  
   header {
     background-color: #1b4965;
     color: rgb(224, 214, 214);
@@ -30,7 +71,7 @@ body {
     height: 150px;
     border-radius: 50%;
     margin-top: 10px;
-    border: 4px solid white;
+    border: 4px solid #f0ebeb;
     object-fit: cover;
   }
   .project-card {
@@ -50,7 +91,7 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: #1b4965;
+    background-color: #114261;
     color: white;
     text-decoration:  none;
     border-radius: 8px;
@@ -59,5 +100,99 @@ body {
   
   .project-link:hover {
     background-color: #53ad09;
+  } 
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 50px auto; /* Centers it and adds spacing from nav */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }  
+  html {
+    scroll-behavior: smooth;
+  }  
+  /* Hamburger style */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+/* Hide menu on small screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
-  
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #007BFF;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all0.3s ease;
+  }
+
+  .nav-links.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+.contact {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
+}
