@@ -196,3 +196,18 @@ body {
 .contact button:hover {
   background-color: #0056b3;
 }
+.dark-mode {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+}
+
+.dark-mode section {
+  background-color: #2e2e2e;
+  color: #f1f1f1;
+}
+
+.dark-mode .project-card,
+.dark-mode .member-card {
+  background-color: #3a3a3a;
+  color: #fff;
+}
