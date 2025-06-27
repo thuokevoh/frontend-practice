@@ -2,19 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login</title>
+  <link rel="stylesheet" href="auth.css" />
 </head>
 <body>
-  <h2>Login</h2>
-  <form action="login.php" method="POST">
-    <label for="email">Email:</label><br />
-    <input type="email" name="email" required /><br /><br />
+  <div class="auth-container">
+    <h2>Login</h2>
+    <form action="login.php" method="POST">
+      <label for="email">Email</label>
+      <input type="email" name="email" required />
 
-    <label for="password">Password:</label><br />
-    <input type="password" name="password" required /><br /><br />
+      <label for="password">Password</label>
+      <input type="password" name="password" required />
 
-    <button type="submit">Login</button>
-    <p><a href="forgot_password.php">Forgot password?</a></p>
-  </form>
+      <button type="submit">Login</button>
+    </form>
+    <p>
+      <a href="signup.html">Sign up</a> |
+      <a href="forgot_password.php">Forgot Password?</a>
+    </p>
+  </div>
 </body>
 </html>
