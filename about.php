@@ -114,9 +114,6 @@ if (!isset($_SESSION['user_id'])) {
       </ul>
     </div>
   </nav>
-  <button id="toggleMode" style="position: fixed; top: 100px; left: 100px; padding: 10px; background: red; color: white;">
-    Toggle Dark Mode
-  </button>
   <div class="card">
     <img src="profile.jpeg" alt="Kevoh" class="profile-pic">
     <div class="info">
@@ -180,6 +177,9 @@ if (!isset($_SESSION['user_id'])) {
       <button type="submit">Send Message</button>
     </form>
   </section>
+  <button id="toggleMode" style="position: relative; top: 100px; left: 100px; padding: 10px; background: black; color: white;">
+    Toggle Dark Mode
+  </button>
   <script>
     function toggleMenu() {
       const nav = document.getElementById("navLinks");

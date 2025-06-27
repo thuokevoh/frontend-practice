@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $new_password = $_POST['new_password'] ?? '';
 
     if (!$token || !$new_password) {
+        var_dump($_POST);
         die("Invalid request.");
     }
 
