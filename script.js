@@ -1,6 +1,3 @@
-// This shows a popup alert when the page loads
-alert("Hello, Kevoh! Welcome to my portfolio ✨");
-
 // This writes a message in the browser console (press F12 → Console tab)
 console.log("JavaScript is now running!");
 
